@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devacation Hackathon | Track 2 - Devacation Revamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Space Background -->
+    <div class="space-background" id="spaceBackground">
+        <div class="planet planet-1"></div>
+        <div class="planet planet-2"></div>
+        <div class="glowing-orb" style="top: 30%; left: 20%;"></div>
+        <div class="glowing-orb" style="bottom: 20%; right: 15%;"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+        <div class="navbar-left">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Devacation Logo" class="custom-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="logo-fallback">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">Devacation</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i></a></li>
+                <li><a href="#timeline">Stages & Timeline</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#deadlines">Dates & Deadlines</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQs & Discussions</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+            <div class="user-profile">
+                <a href="#login" class="btn btn-login">Login</a>
+                <a href="#register" class="btn btn-register">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Hero Banner Section -->
+        <section class="hero-banner" id="home">
+            <div class="banner-content">
+                <div class="event-branding">
+                    <span class="organizer-name">🚀 Presents</span>
+                    <h1 class="event-title">DEVACATION HACKATHON</h1>
+                    <h2 class="track-name">Track 2 - Devacation Revamp</h2>
+                    <p class="hero-subtitle">Build the future with AI-powered design innovation</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-cosmic btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Register to Join
+                        </button>
+                        <button class="btn btn-outline-light btn-large">
+                            <i class="fas fa-comments"></i>
+                            Join Builder Chat
+                        </button>
+                    </div>
+                    <div class="prize-pool">
+                        <i class="fas fa-trophy"></i>
+                        <span>Prize Pool Worth ₹50,000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="astronaut astronaut-1">👨‍🚀</div>
+            <div class="astronaut astronaut-2">🧑🚀</div>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Need Attention Section -->
+                <div class="attention-section">
+                    <div class="attention-header">
+                        <span class="attention-dot"></span>
+                        <span class="attention-text">NEED ATTENTION</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <!-- Event Details Card -->
+                <div class="event-card" id="details">
+                    <div class="event-badges">
+                        <span class="badge badge-mode">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Online</span>
+                        </span>
+                        <span class="badge badge-edition">
+                            <i class="fas fa-calendar"></i>
+                            <span>Devacation 2026</span>
+                        </span>
+                    </div>
+
+                    <div class="event-header">
+                        <div class="event-title-section">
+                            <h1 class="event-main-title">Devacation Revamp | Devacation Hackathon 2026</h1>
+                            <p class="event-organizer">
+                                <i class="fas fa-university"></i>
+                                Devacation Hackathon Organization
+                            </p>
+                        </div>
+                        <div class="event-logo">
+                            <img src="assets/event-logo.png" alt="Event Logo" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+
+                    <div class="event-info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Online Event - Accessible Worldwide</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Team Size</h4>
+                                <p>1 - 3 Members</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Registration Deadline</h4>
+                                <p>17 Mar 26, 12:30 PM IST</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Track</h4>
+                                <p>Website Designing & AI Integration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-actions">
+                        <button class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Register Now
+                        </button>
+                        <button class="btn btn-secondary btn-large">
+                            <i class="fas fa-share-alt"></i>
+                            Share Event
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Description Section -->
+                <div class="description-card">
+                    <h3>About This Track</h3>
+                    <p>
+                        Devacation Revamp is a creative design challenge where participants use AI tools and 
+                        prompt engineering to redesign the Devacation Hackathon webpage, making it more 
+                        visually appealing, engaging, and user-friendly while introducing an innovative feature.
+                    </p>
+                    <h4>What You'll Do:</h4>
+                    <ul>
+                        <li>Create a modern UI layout using AI-powered tools</li>
+                        <li>Improve visual hierarchy and readability</li>
+                        <li>Enhance user journey and navigation</li>
+                        <li>Propose original features that improve the hackathon page</li>
+                    </ul>
+                    <h4>Evaluation Criteria:</h4>
+                    <ul>
+                        <li><strong>Prompt Based (10 marks):</strong> Clarity and structure of AI prompts</li>
+                        <li><strong>Design Based (10 marks):</strong> Visual appeal and layout</li>
+                        <li><strong>UX Based (10 marks):</strong> User experience and navigation</li>
+                        <li><strong>Innovation (10 marks):</strong> Originality of new features</li>
+                    </ul>
+                </div>
+
+                <!-- Mission Section -->
+                <section class="mission-section">
+                    <div class="mission-content">
+                        <h2 class="mission-title">Our Mission</h2>
+                        <p class="mission-text">
+                            To empower participants to shape the future of design through AI innovation, 
+                            creative problem-solving, and collaborative excellence. Join us in building 
+                            tomorrow's digital experiences today.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Sponsor Section -->
+                <section class="sponsor-section">
+                    <p class="sponsor-title">With Support From</p>
+                    <div class="sponsor-logos">
+                        <span class="sponsor-item">Google Cloud</span>
+                        <span class="sponsor-item">GitHub</span>
+                        <span class="sponsor-item">LinkedIn</span>
+                        <span class="sponsor-item">YouTube</span>
+                        <span class="sponsor-item">Gemini</span>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- User Card -->
+                <div class="user-card">
+                    <div class="user-header">
+                        <div class="user-avatar">
+                            <img src="assets/user-avatar.png" alt="User" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="avatar-fallback">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Guest User</h4>
+                            <p>Register to participate</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-success btn-block">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                        <small>(Check Registration Status)</small>
+                    </button>
+                    <div class="registration-count">
+                        <i class="fas fa-user-plus"></i>
+                        <span id="registeredCount">732</span> Registered
+                    </div>
+                </div>
+
+                <!-- Refer & Win Card -->
+                <div class="refer-card">
+                    <div class="refer-content">
+                        <div class="refer-banner">
+                            <i class="fas fa-gift" style="font-size: 3rem; color: var(--primary-color);"></i>
+                        </div>
+                        <div class="refer-text">
+                            <h3>Refer & Win</h3>
+                            <p>Invite friends and earn rewards!</p>
+                        </div>
+                        <button class="btn btn-refer">
+                            <i class="fas fa-share-square"></i>
+                            Refer now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Info Card -->
+                <div class="info-card">
+                    <h4><i class="fas fa-info-circle"></i> Quick Info</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Free Registration</li>
+                        <li><i class="fas fa-check-circle"></i> Certificate of Participation</li>
+                        <li><i class="fas fa-check-circle"></i> AI Tools Provided</li>
+                        <li><i class="fas fa-check-circle"></i> Expert Mentorship</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
